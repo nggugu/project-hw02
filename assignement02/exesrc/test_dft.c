@@ -18,7 +18,7 @@ int main(void) {
     cmplx_t signal_dft[size];
 
     // Generate and sample a signal
-    printf("Generated signal:\n");
+    printf("Generated signal is:\n");
     for (int i = 0; i < size; i++) {
         signal[i][0] = sin(Omega * i * T_s);
         signal[i][1] = 0.0;

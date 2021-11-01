@@ -33,12 +33,12 @@ int main(void) {
     // Reconstructing the signal
     cmplx_idft(signal, signal_idft, size);
 
-    printf("Reconstructed signal:\n");
+    printf("Reconstructed signal is:\n");
     for (int i = 0; i < size; i++) {
         printf("\t%f + %fi\n", signal_idft[i][0], signal_idft[i][1]);
     }
 
-    printf("Generated signal:\n");
+    printf("Generated signal is:\n");
     for (int i = 0; i < size; i++) {
         signal_sampled[i][0] = sin(Omega * i * T_s);
         signal_sampled[i][1] = 0.0;
